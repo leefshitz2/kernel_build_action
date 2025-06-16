@@ -28,10 +28,10 @@ jobs:
     - name: Build Kernel
       uses: ./
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/leefshitz2/android_kernel_samsung_a12
+          kernel-dir: kernel
+          kernel-branch: main
+          config: a12_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
@@ -40,4 +40,5 @@ jobs:
           android-version: 12
           aosp-clang-version: r383902
           disable-lto: true
-          anykernel3: true
+          anykernel3: false
+          bootimg-url: https://github.com/leefshitz2/android_kernel_samsung_a12/releases/download/0.1/boot.img

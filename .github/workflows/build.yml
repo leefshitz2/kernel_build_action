@@ -16,7 +16,6 @@ jobs:
         uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://github.com/leefshitz2/android_kernel_samsung_a12
-          kernel-dir: kernel
           kernel-branch: main
           config: a12_defconfig
           arch: arm64
